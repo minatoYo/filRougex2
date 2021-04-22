@@ -1,0 +1,10 @@
+127.0.0.1/geometrie/triangles/		http://localhost/phpmyadmin/index.php?route=/table/sql&db=geometrie&table=triangles
+
+   Affichage des lignes 0 -  0 (total de 1, traitement en 0,0022 seconde(s).)
+
+
+select (count(id) /(select count(*) from triangles))*100 as pourcentage from triangles WHERE (distance1!=distance2 AND distance2!=distance3 AND distance3!=distance1)
+
+
+
+0.3795	
